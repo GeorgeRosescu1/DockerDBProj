@@ -1,0 +1,77 @@
+.btn{
+  top: 315px;
+  background: white;
+  width: 20%;
+  height: 5%;
+  margin-top: 15px;
+  box-shadow: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.MariaTxt{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.PostTxt{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.btn_back{
+  background: white;
+  width: 10%;
+  height: 5%;
+  box-shadow: 5px;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+button:focus{
+  background: #8FBC8F ;
+}
+button.change:hover {
+  cursor: pointer;
+  background: #8FBC8F ;
+}
+.titlu{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.form_box{
+	background-color: #DEB887;  
+	align-content: center;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 100%;
+	align-self: center;
+	align-items: center;
+	border-radius: 15px;
+  overflow-y: auto;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  align-self: center;
+  align-content: center;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+td, th {
+  border: 2px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ADD8E6;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}

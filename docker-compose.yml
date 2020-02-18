@@ -1,0 +1,36 @@
+version: '3'
+services:
+  maria:
+    image: "mariadb"
+    restart: always
+    networks:
+      - default
+    ports:
+      - "59000:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: maria
+      MYSQL_DATABASE: persons
+      MYSQL_USER: root
+      MYSQL_PASSWORD: maria
+  postgrdb:
+    image: "postgrdb"
+    networks:
+      - default
+    ports:
+      - "5432:5432"
+  proj:
+    build: .
+    restart: always
+    networks:
+      - default
+    depends_on:
+      - maria
+      - postgrdb
+    ports:
+      - "8080:8080"
+networks:
+  default:
+    external:
+      name: proj-nt
+
