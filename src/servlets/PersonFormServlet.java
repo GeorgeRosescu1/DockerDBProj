@@ -61,7 +61,7 @@ public class PersonFormServlet extends HttpServlet {
             System.out.println("Now write in MariaDB");
             personRepository.insert(person, 2);
         } else { //Both
-
+            personRepository.insert(person, 3);
         }
         doGet(req, resp);
     }
